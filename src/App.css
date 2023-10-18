@@ -1,0 +1,145 @@
+* {
+    color: white;
+    /* list-style: none; */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    background-color: darkblue;
+}
+
+/* Modal */
+dialog {
+    top: -30;
+    padding: 0.5rem;
+    margin: auto;
+    border-radius: 5px;
+    z-index: 15;
+
+    &>p {
+        margin-bottom: 0.5rem;
+    }
+
+    &>button {
+        padding: 0.2rem 0.5rem;
+        border-radius: 5px;
+        border: 1px solid gray;
+    }
+
+    &>p,
+    &>button {
+        color: black;
+    }
+}
+
+/* MAIN PAGE */
+
+.main-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+
+    .main-title {
+        color: orange;
+        font-size: 4rem;
+        filter: drop-shadow(3px 3px 1rem cyan);
+    }
+
+    .div-btn {
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+        width: 90%;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+}
+
+
+/* Button Component */
+.btn {
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    opacity: 0.75;
+    padding: 5px 20px;
+    background-color: gray;
+    box-shadow: 2px 2px 5px orange, -2px -2px 5px cyan;
+    margin: 0 1rem;
+
+    &.active {
+        opacity: 1;
+    }
+}
+
+
+/* ADD PAGE */
+.addContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .addContainer>input {
+        min-width: 100px;
+    }
+
+    .addInputContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+
+    .addInputContainer>li {
+        font-weight: bold;
+    }
+
+    .inputAppText {
+        color: black;
+        padding: 2px 10px;
+        margin-bottom: 1rem;
+        border: none;
+        border-radius: 10px;
+        outline: none;
+    }
+
+    .inputAppRange {
+        margin: 0 1rem;
+    }
+}
+
+
+/* LIST PAGE */
+.listContainer {
+    width: fit-content;
+    min-width: 100px;
+
+    > ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .itemQuantity {
+        margin-left: 1rem;
+    }
+}
+
+
+
+/* PAY PAGE */
+.imgCard {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    background-color: aliceblue;
+}
